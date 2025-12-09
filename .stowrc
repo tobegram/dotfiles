@@ -1,2 +1,2 @@
-dir: ~/Coding/dotfiles
+# dir: ~/Coding/dotfiles
 target: ~/.config
