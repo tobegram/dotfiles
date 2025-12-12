@@ -1,14 +1,49 @@
 {
 	"file_history":
 	[
+		"/etc/fstab",
+		"/home/papatom/fstab",
+		"/run/media/papatom/DATA/Tombi/Büro/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+		"/home/.ssh",
+		"/mnt/DATA/Tiff_Tom/ETW_Waldstraße_Zwickau/AktivitaetenLogWohnung.txt",
+		"/media/papatom/X1TBEYER/id_ed25519.pub",
+		"/media/papatom/Daten/Bewerbung/Firmen/eex/Notizen.txt",
+		"/media/papatom/X1TBEYER/SublimeText/Packages/User/key_bindings",
+		"/home/papatom/.profile",
+		"/home/papatom/.aqbanking/settings6/aqbanking/config.conf",
+		"/mnt/DATA/Tombi/Büro/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+		"/media/papatom/X1TBEYER/SublimeText/Packages/User/Default (Windows).sublime-keymap",
+		"/home/papatom/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/papatom/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
+		"/media/papatom/X1TBEYER/SublimeText/Packages/User/Preferences.sublime-settings",
+		"/media/papatom/X1TBEYER/SublimeText/Packages/User/Package Control.sublime-settings",
+		"/media/papatom/ARCH_202508/arch/version",
+		"/mnt/DATA/Tombi/Büro/Finanzen/Einkommenssteuer/tbeyer_elster_2025.pfx",
+		"/tmp/fdb5bd62-6049-497c-94fa-9cae324cad8615505027825105316553/.bashrc",
+		"/home/papatom/Coding/install_ohmyposh.sh",
+		"/home/papatom/.config/ohmyposh.json",
+		"/home/papatom/.config/tombrero.omp.json",
+		"/home/papatom/Schreibtisch/docker-compose.yaml",
+		"/home/papatom/.config/fish/config.fish",
+		"/tmp/ce03555e-8117-49b0-aa76-62d179b70be81493851485841153167/.bashrc",
+		"/tmp/86d04741-c67f-4458-9bbf-38057bd622a313703535522563332817/docker.pid",
+		"/tmp/566fff7e-acf0-4e54-833b-122407709c7f7370880995590824101/docker-compose.yaml",
+		"/tmp/9689fd53-9e30-44f5-9aa5-6706967025406511758661854482658/.env",
+		"/tmp/3a1f6443-aacd-4f20-b206-bc6273262ea08412571055638956666/docker-compose.yaml",
+		"/tmp/85989ffe-01c1-4343-911f-ef33f8ce0e3912498167355390985447/engine-id",
+		"/mnt/DATA/Tiff_Tom/Bank/A_Sparkasse Girokonto_Tom/Kontenübersicht.kmy",
+		"/home/papatom/.config/fish/profile",
+		"/home/papatom/.config/ubuntu.profile.json"
 	],
 	"folder_history":
 	[
+		"/home/papatom/Coding",
+		"/home/papatom/.ssh"
 	],
 	"last_version": 4200,
-	"last_window_id": 1,
+	"last_window_id": 4,
 	"log_indexing": false,
-	"next_update_check": 1765655784,
+	"next_update_check": 1765621375,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -58,10 +93,42 @@
 			},
 			"file_history":
 			[
+				"/home/papatom/Coding/dotfiles/sublime/sublime-text/Packages/User/Package Control.sublime-settings",
+				"/etc/fstab",
+				"/home/papatom/fstab",
+				"/media/papatom/Daten/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+				"/home/.ssh",
+				"/mnt/DATA/Tiff_Tom/ETW_Waldstraße_Zwickau/AktivitaetenLogWohnung.txt",
+				"/media/papatom/X1TBEYER/id_ed25519.pub",
+				"/media/papatom/Daten/Bewerbung/Firmen/eex/Notizen.txt",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/key_bindings",
+				"/home/papatom/.profile",
+				"/home/papatom/.aqbanking/settings6/aqbanking/config.conf",
+				"/mnt/DATA/Tombi/Büro/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Default (Windows).sublime-keymap",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Preferences.sublime-settings",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Package Control.sublime-settings",
+				"/media/papatom/ARCH_202508/arch/version",
+				"/mnt/DATA/Tombi/Büro/Finanzen/Einkommenssteuer/tbeyer_elster_2025.pfx",
+				"/tmp/fdb5bd62-6049-497c-94fa-9cae324cad8615505027825105316553/.bashrc",
+				"/home/papatom/Coding/install_ohmyposh.sh",
+				"/home/papatom/.config/ohmyposh.json",
+				"/home/papatom/.config/tombrero.omp.json",
+				"/home/papatom/Schreibtisch/docker-compose.yaml",
+				"/home/papatom/.config/fish/config.fish",
+				"/tmp/ce03555e-8117-49b0-aa76-62d179b70be81493851485841153167/.bashrc",
+				"/tmp/86d04741-c67f-4458-9bbf-38057bd622a313703535522563332817/docker.pid",
+				"/tmp/566fff7e-acf0-4e54-833b-122407709c7f7370880995590824101/docker-compose.yaml",
+				"/tmp/9689fd53-9e30-44f5-9aa5-6706967025406511758661854482658/.env",
+				"/tmp/3a1f6443-aacd-4f20-b206-bc6273262ea08412571055638956666/docker-compose.yaml",
+				"/tmp/85989ffe-01c1-4343-911f-ef33f8ce0e3912498167355390985447/engine-id",
+				"/mnt/DATA/Tiff_Tom/Bank/A_Sparkasse Girokonto_Tom/Kontenübersicht.kmy",
+				"/home/papatom/.config/fish/profile",
+				"/home/papatom/.config/ubuntu.profile.json"
 			],
 			"find":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"find_in_files":
 			{
@@ -93,13 +160,20 @@
 			},
 			"incremental_find":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"input":
 			{
 				"height": 0.0
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 229.0,
+				"history":
+				[
+				]
+			},
 			"output.find_results":
 			{
 				"height": 0.0,
@@ -110,7 +184,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 0.0
+				"height": 62.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -144,7 +218,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 150.0,
+			"side_bar_width": 188.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -164,10 +238,10 @@
 			"buffers":
 			[
 				{
-					"contents": "",
+					"file": "/home/papatom/Coding/dotfiles/sublime/sublime-text/Packages/User/Package Control.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 77,
 						"line_ending": "Unix"
 					},
 					"undo_stack":
@@ -175,20 +249,10 @@
 						[
 							1,
 							1,
-							"insert",
-							{
-								"characters": "qqq"
-							},
-							"AwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							2,
-							4,
-							"left_delete",
+							"revert",
 							null,
-							"AwAAAAIAAAAAAAAAAgAAAAAAAAABAAAAcQEAAAAAAAAAAQAAAAAAAAABAAAAcQAAAAAAAAAAAAAAAAAAAAABAAAAcQ",
-							"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAewoJImJvb3RzdHJhcHBlZCI6IHRydWUKfQoAAAAAAAAAAE0AAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				}
@@ -223,12 +287,52 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
+			"expanded_folders":
+			[
+				"/home/papatom/Coding",
+				"/home/papatom/Coding/dotfiles",
+				"/home/papatom/Coding/dotfiles/sublime",
+				"/home/papatom/Coding/dotfiles/sublime/sublime-text",
+				"/home/papatom/Coding/dotfiles/sublime/sublime-text/Packages",
+				"/home/papatom/Coding/dotfiles/sublime/sublime-text/Packages/User"
+			],
 			"file_history":
 			[
+				"/etc/fstab",
+				"/home/papatom/fstab",
+				"/media/papatom/Daten/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+				"/home/.ssh",
+				"/mnt/DATA/Tiff_Tom/ETW_Waldstraße_Zwickau/AktivitaetenLogWohnung.txt",
+				"/media/papatom/X1TBEYER/id_ed25519.pub",
+				"/media/papatom/Daten/Bewerbung/Firmen/eex/Notizen.txt",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/key_bindings",
+				"/home/papatom/.profile",
+				"/home/papatom/.aqbanking/settings6/aqbanking/config.conf",
+				"/mnt/DATA/Tombi/Büro/Bewerbung/Firmen/Stadtwerke/Testmanager/Notizen.txt",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Default (Windows).sublime-keymap",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Preferences.sublime-settings",
+				"/media/papatom/X1TBEYER/SublimeText/Packages/User/Package Control.sublime-settings",
+				"/media/papatom/ARCH_202508/arch/version",
+				"/mnt/DATA/Tombi/Büro/Finanzen/Einkommenssteuer/tbeyer_elster_2025.pfx",
+				"/tmp/fdb5bd62-6049-497c-94fa-9cae324cad8615505027825105316553/.bashrc",
+				"/home/papatom/Coding/install_ohmyposh.sh",
+				"/home/papatom/.config/ohmyposh.json",
+				"/home/papatom/.config/tombrero.omp.json",
+				"/home/papatom/Schreibtisch/docker-compose.yaml",
+				"/home/papatom/.config/fish/config.fish",
+				"/tmp/ce03555e-8117-49b0-aa76-62d179b70be81493851485841153167/.bashrc",
+				"/tmp/86d04741-c67f-4458-9bbf-38057bd622a313703535522563332817/docker.pid",
+				"/tmp/566fff7e-acf0-4e54-833b-122407709c7f7370880995590824101/docker-compose.yaml",
+				"/tmp/9689fd53-9e30-44f5-9aa5-6706967025406511758661854482658/.env",
+				"/tmp/3a1f6443-aacd-4f20-b206-bc6273262ea08412571055638956666/docker-compose.yaml",
+				"/tmp/85989ffe-01c1-4343-911f-ef33f8ce0e3912498167355390985447/engine-id",
+				"/mnt/DATA/Tiff_Tom/Bank/A_Sparkasse Girokonto_Tom/Kontenübersicht.kmy",
+				"/home/papatom/.config/fish/profile",
+				"/home/papatom/.config/ubuntu.profile.json"
 			],
 			"find":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"find_in_files":
 			{
@@ -258,6 +362,12 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"folders":
+			[
+				{
+					"path": "/home/papatom/Coding"
+				}
+			],
 			"groups":
 			[
 				{
@@ -265,11 +375,12 @@
 					[
 						{
 							"buffer": 0,
+							"file": "/home/papatom/Coding/dotfiles/sublime/sublime-text/Packages/User/Package Control.sublime-settings",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 0,
+								"buffer_size": 77,
 								"regions":
 								{
 								},
@@ -282,8 +393,9 @@
 								],
 								"settings":
 								{
-									"auto_name": "",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -298,7 +410,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"input":
 			{
@@ -327,6 +439,13 @@
 				]
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 229.0,
+				"history":
+				[
+				]
+			},
 			"output.find_results":
 			{
 				"height": 0.0,
@@ -339,7 +458,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 0.0
+				"height": 62.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -377,12 +496,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 150.0,
+			"side_bar_width": 188.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 1,
+			"window_id": 4,
 			"workspace_name": ""
 		}
 	],
