@@ -1,7 +1,8 @@
 {
+	"font_size": 15,
 	"ignored_packages":
 	[
-		"PowerShell",
 		"Vintage",
 	],
+	"index_files": true,
 }
