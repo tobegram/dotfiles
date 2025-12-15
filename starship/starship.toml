@@ -1,71 +1,32 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+command_timeout = 200
+format = "[$directory$git_branch$git_status]($style)$character"
 
-format = """
-$username\
-$line_break\
-$directory\
-$fill\
-$os\
-$shell\
-$cmd_duration\
-\n$character"""
-
-palette = "zeiss"
-# Inserts a blank line between shell prompts
-add_newline = false
-
-[username]
-format = '[$user ]($style)'
-show_always = true
-style_user = "main"
-style_root = "bg:#9A348E"
-disabled = false
+[character]
+error_symbol = "[✗](bold cyan)"
+success_symbol = "[❯](bold cyan)"
 
 [directory]
-style = "path"
-truncation_length = 3
-truncation_symbol = '…/'
+truncation_length = 2
+truncation_symbol = "…/"
+repo_root_style = "bold cyan"
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 
-[fill]
-symbol = ' '
+[git_branch]
+format = "[$branch]($style) "
+style = "italic cyan"
 
-[os]
-format = '[$symbol ]($style)'
-style = 'main'
-disabled = false
-
-[os.symbols]
-Windows = "\uE62A"
-Arch = "\uE732"
-Ubuntu = "\uEf72"
-Debian = "\uE77d"
-
-[shell]
-bash_indicator = "\uEBCA"
-fish_indicator = "\uEE41"
-powershell_indicator = "\uebc7"
-unknown_indicator = 'mystery shell'
-style = 'main'
-disabled = false
-
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = false
-
-[cmd_duration]
-format = '[$duration]($style)'
-style = 'duration'
-min_time = 0
-
-
-
-# Define color palette from OhhMyPosh Zeiss terminal
-[palettes.zeiss]
-main = '#8D4DD3'
-svn = '#ffeb3b'
-duration = '#b8ff75'
-path = '#61AFEF'
-success = '#20A452'
-error = '#e91e63'
-
+[git_status]
+format     = '[$all_status]($style)'
+style      = "cyan"
+ahead      = "⇡${count} "
+diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+behind     = "⇣${count} "
+conflicted = " "
+up_to_date = " "
+untracked  = "? "
+modified   = " "
+stashed    = ""
+staged     = ""
+renamed    = ""
+deleted    = ""
