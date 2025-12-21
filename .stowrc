@@ -1,5 +1,5 @@
 #--dir=~/Coding/dotfiles
-#--target=~/.config
+--target=~
 --ignore='sublime/.config/sublime-text/Lib/'
 --ignore='sublime/.config/sublime-text/Local/'
 --ignore='sublime/.config/sublime-text/Log/'
