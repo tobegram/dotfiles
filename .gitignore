@@ -1,6 +1,6 @@
-sublime/sublime-text/Lib/
-sublime/sublime-text/Local/
-sublime/sublime-text/Packages/User/Package Control.user-ca-bundle
-sublime/sublime-text/Packages/User/Package Control.sublime-settings
-sublime/sublime-text/Backup/
+sublime/.config/sublime-text/Lib/
+sublime/.config/sublime-text/Local/
+sublime/.config/sublime-text/Packages/User/Package Control.user-ca-bundle
+sublime/.config/sublime-text/Packages/User/Package Control.sublime-settings
+sublime/.config/sublime-text/Backup/
 
