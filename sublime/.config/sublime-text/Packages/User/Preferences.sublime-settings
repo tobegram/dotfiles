@@ -1,4 +1,9 @@
 {
 	"font_size": 15,
-	"word_wrap": "false"
+	"word_wrap": "false",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
 }
