@@ -1,0 +1,21 @@
+SFTP 2.0.0 Changelog:
+
+** New Features **
+
+ - Integration with various UI improvements in Sublime Text 4
+   - Colors and icons in the quick panel
+   - Annotations on the right-hand side of the quick panel
+   - True password inputs with circles instead of asterisks
+ - Support for sudo over SFTP via the "sftp_sudo" setting
+ - Support for FTPS servers requiring SSL/TLS session reuse
+ - Compatibility with macOS 13
+ - Compatibility with Linux installs using OpenSSH 9
+ - psftp.exe version 0.78 for SFTP connections on Windows
+
+All licenses purchased:
+
+ - Since March 13, 2022 are already valid v2 license keys!
+ - Since release of Sublime Text 4 on May 21, 2021 have been automatically upgraded!
+   See https://codexns.io/account.
+ - Before May 21, 2021 may be upgraded from v1 to v2 for $15.
+   See https://codexns.io/products/sftp_for_sublime/upgrade.

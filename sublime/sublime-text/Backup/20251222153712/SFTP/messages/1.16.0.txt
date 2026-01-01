@@ -1,0 +1,15 @@
+SFTP 1.16.0 Changelog:
+
+Changes
+-------
+
+ - Update bundled version of psftp.exe on Windows to be based on version 0.76,
+   including:
+    - SSH key fingerprints are now OpenSSL-style SHA-256
+    - Added support for PPK3 private key format
+    - Various security fixes
+
+ - Fixed a bug with Sublime Text 4 and the JSON syntax definition
+
+ - This will be the final release supporting Sublime Text 2, and Sublime Text
+   3 builds older than 3143 (3.0)

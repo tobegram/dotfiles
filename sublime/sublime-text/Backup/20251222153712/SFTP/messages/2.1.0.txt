@@ -1,0 +1,9 @@
+SFTP 2.1.0 Changelog:
+
+** New Features **
+
+ - Added compatibility with Linux servers running OpenSSH 9.2+
+   - This commonly manifested as "Error parsing remote folder listing"
+     on Debian 12 and derived distributions
+ - psftp.exe version 0.81 for SFTP connections on Windows
+ - Add new "sftp_debug" setting to sftp-config.json files
