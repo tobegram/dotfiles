@@ -1,6 +1,0 @@
-SFTP 1.16.5 Changelog:
-
-Changes
--------
-
- - Fixed negotiation of TLS connections in Sublime Text 4
