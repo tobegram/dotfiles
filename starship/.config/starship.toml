@@ -1,12 +1,14 @@
 command_timeout = 200
 
 format = """
+$os\
+$shell\
 $username\
 $line_break\
 $directory\
+$git_branch\
+$git_status\
 $fill\
-$os\
-$shell\
 $cmd_duration\
 \n$character"""
 
@@ -56,11 +58,12 @@ use_os_path_sep = true
 
 [git_branch]
 format = "[$branch]($style) "
-style = "italic cyan"
+style = "svn"
+symbol = " "
 
 [git_status]
 format     = '[$all_status]($style)'
-style      = "cyan"
+style      = "svn"
 ahead      = "⇡${count} "
 diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
 behind     = "⇣${count} "
