@@ -1,13 +1,16 @@
-#general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
 
-[env]
-TERM = "xterm-256color"
+#[env]
+#STERM = "xterm-256color"
 
 [font]
-normal = { family = "CaskaydiaMono Nerd Font Mono" }
-bold = { family = "CaskaydiaMono Nerd Font Mono" }
-italic = { family = "CaskaydiaMono Nerd Font Mono" }
-size = 9
+normal = { family = "Liberation Mono", style = "Regular" }
+#bold = { family = "Liberation Mono" }
+#italic = { family = "Liberation Mono" }
+size = 15
+
+[colors.primary]
+foreground = "#D8D8D8"
+background = "#1F173A"
 
 [window]
 #padding.x = 14
@@ -19,3 +22,6 @@ bindings = [
 { key = "Insert", mods = "Shift", action = "Paste" },
 { key = "Insert", mods = "Control", action = "Copy" }
 ]
+
+#[terminal]
+#shell = { program = "/bin/fish", args = ["-l"] }

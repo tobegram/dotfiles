@@ -5,7 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Bash Build System",
+		"Bash Completions",
+		"fish",
 		"Package Control",
 		"PowerShell",
+		"Shell Exec",
 	],
 }
