@@ -34,7 +34,20 @@ else
 end
 
 # -----------------------------------------------------------------
-# 3️⃣  Weitere Abkürzungen
+# Farbige Ausgaben erzeugen
+# -----------------------------------------------------------------
+
+function ip
+    if test (count $argv) -eq 0
+        command grc ip address
+    else
+        command ip $argv
+    end
+end
+
+
+# -----------------------------------------------------------------
+# Weitere Abkürzungen
 # -----------------------------------------------------------------
 
 abbr .. 'cd ..'
