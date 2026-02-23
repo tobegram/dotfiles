@@ -17,7 +17,6 @@ if type -q eza
 else
     # Optional: falls `eza` fehlt, kannst du hier ein Fallback‑Alias setzen,
     # z. B. `abbr ls 'ls -la'` – oder einfach nichts tun.
-    abbr ls 'ls -la'
     abbr ls 'ls -la --color=auto'
     abbr grep 'grep --color=auto'
 end
