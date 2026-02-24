@@ -13,7 +13,7 @@ if type -q eza
     # Hier verwenden wir `abbr`, weil es in Fish sehr leichtgewichtig ist.
     abbr ls 'eza -la --group-directories-first'
     abbr lt 'eza --tree --level=2 --long --icons --git'
-    abbr ltt 'lt -a'
+    abbr ltt 'eza --tree --level=3 --long --icons --git'
 else
     # Optional: falls `eza` fehlt, kannst du hier ein Fallback‑Alias setzen,
     # z. B. `abbr ls 'ls -la'` – oder einfach nichts tun.
