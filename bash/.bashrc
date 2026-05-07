@@ -19,3 +19,4 @@ alias ..='cd ..'
 alias home='cd $HOME'
 
 eval "$(starship init bash)"
+. "$HOME/.cargo/env"
