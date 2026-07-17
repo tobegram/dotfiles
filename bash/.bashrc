@@ -15,6 +15,15 @@ else
   alias grep='grep --color=auto'
 fi
 
+if command -v yazi &> /dev/null; then
+  alias y='yazi'
+fi
+
+if command -v lazygit &> /dev/null; then
+  alias lay='lazygit'
+fi
+
+
 alias ..='cd ..'
 alias home='cd $HOME'
 
