@@ -23,9 +23,14 @@ if command -v lazygit &> /dev/null; then
   alias lay='lazygit'
 fi
 
+if command -v proton-drive &> /dev/null; then
+  alias pd='proton-drive'
+fi
+
 
 alias ..='cd ..'
 alias home='cd $HOME'
+alias dotfiles='cd ~/Coding/dotfiles'
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
