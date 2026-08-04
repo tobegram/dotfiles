@@ -25,12 +25,17 @@ fi
 
 if command -v proton-drive &> /dev/null; then
   alias pd='proton-drive'
+  alias pd-login='proton-drive auth login'
+  alias pd-logout='proton-drive auth logout'
 fi
+
+
 
 
 alias ..='cd ..'
 alias home='cd $HOME'
 alias dotfiles='cd ~/Coding/dotfiles'
+alias hist='history'
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
