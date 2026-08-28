@@ -125,11 +125,13 @@ keymap = [
 	{ on = [ ",", "r" ], run = "sort random --reverse=no",                       desc = "Sort randomly" },
 
 	# Goto
-	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
-	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go ~/.config" },
-	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
-	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
-	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
+	{ on = [ "g", "h" ],       run = "cd ~",             				desc = "> home" },
+	{ on = [ "g", "c" ],       run = "cd ~/.config",     				desc = "> ~/.config" },
+	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   				desc = "> ~/Downloads" },
+	{ on = [ "g", "<Space>" ], run = "cd --interactive", 				desc = "Jump interactively" },
+	{ on = [ "g", "F" ],       run = "follow",           				desc = "Follow hovered symlink" },
+	{ on = [ "g", "m" ],       run = "cd /media",		 				desc = "> /media" },
+	{ on = [ "g", "f" ],       run = "cd /media/DATA/Tiff_Tom/Fotos",	desc = "> Fotos" },
 
 	# Tabs
 	{ on = [ "t", "t" ], run = "tab_create --current",     desc = "Create a new tab in CWD" },
