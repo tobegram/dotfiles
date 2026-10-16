@@ -31,7 +31,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = "${EDITOR:-vi} %s", desc = "$EDITOR",      for = "unix", block = true },
+	{ run = 'subl %s', 			desc = "Sublime",      for = "unix", block = true },
 	{ run = "code %s",          desc = "code",         for = "windows", orphan = true },
 	{ run = "code -w %s",       desc = "code (block)", for = "windows", block = true },
 ]
@@ -41,7 +41,7 @@ play = [
 	{ run = 'start "" %s1',    desc = "Play", for = "windows", orphan = true },
 	{ run = "termux-open %s1", desc = "Play", for = "android" },
 	{ run = "mediainfo %s1; echo 'Press enter to exit'; read _", block = true, desc = "Show media info", for = "unix" },
-	{ run = "mediainfo %s1 & pause", block = true, desc = "Show media info", for = "windows" },
+	{ run = "mediaininfo %s1 & pause", block = true, desc = "Show media info", for = "windows" },
 ]
 open = [
 	{ run = "xdg-open %s1",    desc = "Open", for = "linux" },
@@ -98,6 +98,10 @@ image_bound      = [ 10000, 10000 ]
 suppress_preload = false
 
 [plugin]
+prepend_previewers = [
+	{ mime = "{image,audio,video}/",  run = "mediainfo" },
+	{ mime = "{application/x-subrip}", run = "mediainfo" },
+]
 fetchers = [
 	# MIME-type
 	{ url = "*/",         run = "mime.dir",    prio = "high", group = "mime" },
@@ -145,10 +149,10 @@ previewers = [
 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
 	# JSON
 	{ mime = "application/{json,ndjson}", run = "json" },
-	# Image
+	# Image - CHANGED: Added medainfo first, then image for fallback
+	{ mime = "image/*", run = "mediainfo" },
 	{ mime = "image/{avif,hei?,jxl}", run = "magick" },
 	{ mime = "image/svg+xml", run = "svg" },
-	{ mime = "image/*", run = "image" },
 	# Video
 	{ mime = "video/*", run = "video" },
 	# PDF
@@ -245,3 +249,23 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
+
+# Add to your existing config.toml at the end
+
+# ============================================
+# CUSTOM PREVIEWER CONFIGURATION
+# ============================================
+
+#[plugin.prepend_previewers]
+# Disable default mediainfo for images to use our custom Lua handler
+# { mime = "{image,audio,video}/",  run = "mediainfo" }
+# { mime = "{application/x-subrip}", run = "mediainfo" }
+
+#[plugin.previewers]
+# Images now use our custom previewer first
+#{ mime = "image/*", run = "custom_image" }
+#{ mime = "image/{avif,hei?,jxl}", run = "magick" }
+#{ mime = "image/svg+xml", run = "svg" }
+
+# Audio/video still use standard handlers
+#{ mime = "{audio,video}/",  run = "mediainfo" }
