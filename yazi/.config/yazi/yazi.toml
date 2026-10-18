@@ -7,7 +7,7 @@
 ratio          = [ 1, 4, 3 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
-sort_reverse 	 = false
+sort_reverse   = false
 sort_dir_first = true
 sort_translit  = false
 sort_fallback  = "alphabetical"
@@ -37,15 +37,13 @@ edit = [
 ]
 play = [
 	{ run = "xdg-open %s1",    desc = "Play", for = "linux", orphan = true },
-	{ run = "open %s",         desc = "Play", for = "macos" },
 	{ run = 'start "" %s1',    desc = "Play", for = "windows", orphan = true },
 	{ run = "termux-open %s1", desc = "Play", for = "android" },
 	{ run = "mediainfo %s1; echo 'Press enter to exit'; read _", block = true, desc = "Show media info", for = "unix" },
-	{ run = "mediaininfo %s1 & pause", block = true, desc = "Show media info", for = "windows" },
+	{ run = "mediainfo %s1 & pause", block = true, desc = "Show media info", for = "windows" },
 ]
 open = [
 	{ run = "xdg-open %s1",    desc = "Open", for = "linux" },
-	{ run = "open %s",         desc = "Open", for = "macos" },
 	{ run = 'start "" %s1',    desc = "Open", for = "windows", orphan = true },
 	{ run = "termux-open %s1", desc = "Open", for = "android" },
 ]
@@ -63,11 +61,38 @@ download = [
 	{ run = "ya emit download --open %S", desc = "Download and open" },
 	{ run = "ya emit download %S",        desc = "Download" },
 ]
+office = [
+	{ run = "libreoffice %s1", desc = "LibreOffice", for = "linux",    orphan = true },
+	{ run = 'start "" %s1',    desc = "Office",      for = "windows", orphan = true },
+]
 
 [open]
 rules = [
 	# Folder
 	{ url = "*/", use = [ "edit", "open", "reveal" ] },
+
+	# LibreOffice / OpenDocument
+	{ mime = "application/vnd.oasis.opendocument.*", use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.sun.xml.*",            use = [ "office", "reveal" ] },
+	{ url = "*.{odt,ott,fodt,sxw,stw}",  use = [ "office", "reveal" ] },
+	{ url = "*.{ods,ots,fods,sxc,stc}",  use = [ "office", "reveal" ] },
+	{ url = "*.{odp,otp,fodp,sxi,sti}",  use = [ "office", "reveal" ] },
+	{ url = "*.{odg,otg,fodg,sxd,std}",  use = [ "office", "reveal" ] },
+	{ url = "*.{odf,odc,odb,odm,oth}",   use = [ "office", "reveal" ] },
+
+	# Microsoft Office
+	{ mime = "application/msword",                              use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.ms-word*",                        use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.ms-excel*",                       use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.ms-powerpoint*",                  use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.openxmlformats-officedocument.*", use = [ "office", "reveal" ] },
+	{ mime = "application/vnd.ms-office",                       use = [ "office", "reveal" ] },
+	{ mime = "application/rtf",                                 use = [ "office", "reveal" ] },
+	{ url = "*.{doc,docx,docm,dot,dotx,dotm}",                    use = [ "office", "reveal" ] },
+	{ url = "*.{xls,xlsx,xlsm,xlsb,xlt,xltx,xltm,xla,xlam}",      use = [ "office", "reveal" ] },
+	{ url = "*.{ppt,pptx,pptm,pot,potx,potm,pps,ppsx,ppsm,ppa,ppam}", use = [ "office", "reveal" ] },
+	{ url = "*.{rtf,vsd,vsdx,vss,vst,mdb,accdb,pub,one,onetoc2}", use = [ "office", "reveal" ] },
+
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
@@ -249,23 +274,3 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
-
-# Add to your existing config.toml at the end
-
-# ============================================
-# CUSTOM PREVIEWER CONFIGURATION
-# ============================================
-
-#[plugin.prepend_previewers]
-# Disable default mediainfo for images to use our custom Lua handler
-# { mime = "{image,audio,video}/",  run = "mediainfo" }
-# { mime = "{application/x-subrip}", run = "mediainfo" }
-
-#[plugin.previewers]
-# Images now use our custom previewer first
-#{ mime = "image/*", run = "custom_image" }
-#{ mime = "image/{avif,hei?,jxl}", run = "magick" }
-#{ mime = "image/svg+xml", run = "svg" }
-
-# Audio/video still use standard handlers
-#{ mime = "{audio,video}/",  run = "mediainfo" }
