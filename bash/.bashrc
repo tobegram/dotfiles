@@ -29,8 +29,10 @@ if command -v proton-drive &> /dev/null; then
   alias pd-logout='proton-drive auth logout'
 fi
 
-
-
+if command -v subl &> /dev/null; then
+  export EDITOR="subl -w"
+  export VISUAL="subl -w"
+fi
 
 alias ..='cd ..'
 alias home='cd $HOME'
